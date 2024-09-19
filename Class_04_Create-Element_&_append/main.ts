@@ -1,22 +1,21 @@
-// document.body.style.background = "black"; // document ke andar rakhy body ke page ko black color ka background laga kar manupulation kardi.
+document.body.style.background = "black"; // document ke andar rakhy body ke page ko black color ka background laga kar manupulation kardi.
 
 let myh1: any = document.createElement('h1')  // Create Element
 
 // console.log(myh1);  // succecsfully created h1 tag
 
+myh1.innerText = "Taha"; // manipulation 1
+
+
+// user data
 let UserName = prompt("What is Your Name?");
 
 myh1.innerText = UserName; // manipulation 2
 
-// myh1.innerText = "Taha"; // manipulation 1
 
 // console.log(myh1);  // check kar rhy hain h1 tag mein value aai hai ya nahi.
 
 document.body.append(myh1); // push to HTML body Webpage
-
-
-
-
 
 
 
@@ -46,62 +45,5 @@ webpage pe dikhai dega print hua huwa.
 DOM ke andar jab ham kisi bhi Element ko create karte hain to wo sirf memory ke andar hota hai HTML ke andar nahi jata
 lekin agr hamen is DOM se create kiyye gaye Element ko HTML mein bhejna hai or usy browser pe print hua huwa show 
 krwana hai to ham aisy karenge is method se.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 */

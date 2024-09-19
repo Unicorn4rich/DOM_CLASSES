@@ -1,12 +1,12 @@
-// let myAnchor: any = document.getElementById('myAnchor');
+let myAnchor: any = document.getElementById('myAnchor');
 
-// // console.log(myAnchor) // tag or uske sath bohut sara Extra Code.
+// console.log(myAnchor) // tag or uske sath bohut sara Extra Code.
 
-// let data = myAnchor.innerText;
+let data = myAnchor.innerText;
 
-// localStorage.setItem('pageOneData', data);
+localStorage.setItem('pageOneData', data);
 
-// console.log(localStorage.getItem('pageOneData'));  // Output:  Click here to open second file
+console.log(localStorage.getItem('pageOneData'));  // Output:  Click here to open second file
 
 
 // <--------------------------------------------END------------------------------------------->

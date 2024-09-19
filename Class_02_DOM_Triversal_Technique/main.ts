@@ -2,10 +2,10 @@
 // iska matlab hai ke travel karna aage peechy opar neechy kisi bhi tarf move krwana.
 
 
-let myDiv = document.getElementById('myDiv');
+let myDiv:any = document.getElementById('myDiv');
 
 
-// myDiv.style.background = "blue";
+myDiv.style.background = "blue";
 myDiv.style.border = "2px solid black";
 myDiv.style.display = "flex";
 // myDiv.style.justifyContent = "center";
@@ -17,29 +17,29 @@ myDiv.style.flexDirection = "column";
 
 // DOM Traversal technique => Start
 
-// let para = document.getElementsByTagName('p'); // HMLT collection dega veriable mein or ye ham darect para ko get kar 
-// para[0].style.background = "red";              // uspe manipulation kar rhy hain lekin ab ham bagher class, tag, ya id
-//                                                // ke div ke andar rakhy paragraphs ko acces kar ke maipulation karna chahty hain.
+let para = document.getElementsByTagName('p'); // HMLT collection dega veriable mein or ye ham darect para ko get kar 
+para[0].style.background = "red";              // uspe manipulation kar rhy hain lekin ab ham bagher class, tag, ya id
+//                                              // ke div ke andar rakhy paragraphs ko acces kar ke maipulation karna chahty hain.
 
 
-// myDiv.firstElementChild.style.color = "brown";
-// myDiv.lastElementChild.style.color = "red";
+myDiv.firstElementChild.style.color = "brown";
+myDiv.lastElementChild.style.color = "red";
 
-// document.body.style.background = "yellow"; 
+document.body.style.background = "yellow"; 
 
 
 console.log(
 
-//    myDiv.parentElement  
+myDiv.parentElement  
 
-//  document.body.firstElementChild.firstElementChild.
-//  nextElementSibling.nextElementSibling.style.color = "aqua"
+document.body.firstElementChild.firstElementChild.
+nextElementSibling.nextElementSibling.style.color = "aqua"
 
-//  document.body.firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.style.background = "yellow"   
+document.body.firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.style.background = "yellow"   
 
-//  document.body.firstElementChild.lastElementChild.previousElementSibling.previousElementSibling.style.background = "blue"
+document.body.firstElementChild.lastElementChild.previousElementSibling.previousElementSibling.style.background = "blue"
 
-   document.body.firstElementChild.children[2].style.color = "blue"
+document.body.firstElementChild.children[2].style.color = "blue"
      
 ) 
 
@@ -98,52 +98,5 @@ document.body.firstElementChild.children[2].style.color = "blue";   => p
 
 children property ko index number deny se wo property sirf wali children array mein and kar ke laa kar degi jiska ham usy index denge.
 or usi index pe manpulation bhi kar sakty hain CSS ki.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 */

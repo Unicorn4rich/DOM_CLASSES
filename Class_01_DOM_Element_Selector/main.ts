@@ -4,13 +4,10 @@
 
 let myDiv = document.getElementById('myDiv');
 
-myDiv.innerText = "I am Div"          /* Div ke andar text likha hai is property se */
+// console.log(myDiv);   // check kar rhy hain HTML se Element Succesfully aya bhi ha ya nahi.
 
-// console.log(myDiv);   div ki property show nahi ho rhi.
-
-myDiv.innerText = "I am div"  // (myDiv) ke andar bohut sari property Aai hain apne ap jisme se (innerText) bhi aik hai
-
-myDiv.innerText = "I am Div";
+myDiv.innerText = "I am Div"    /* Div ke andar text likha hai is property se */
+//                              (myDiv) ke andar bohut sari property Aai hain apne ap jisme se (innerText) bhi aik hai
 
 myDiv.style.height = "200px";
 myDiv.style.width = "200px";
@@ -48,7 +45,7 @@ background[1].style.border = "2px solid black"
 
 let div = document.getElementsByTagName('div');
 
-// console.log(div); array Collection
+// console.log(div); // HTMLCollection(2) [div.class, div.class]
 
 div[0].style.height = "150px";
 div[0].style.width = "150px";
@@ -84,9 +81,8 @@ for(let i = 0; i < div.length; i++){
 
 
 let myDiv = document.querySelector('#id');    // => (id) accepted
-let myDiv = document.querySelector('.class');
-
-let myDiv = document.querySelector('div');
+let myDiv = document.querySelector('.class'); // => (id) accepted
+let myDiv = document.querySelector('div');    // => (id) accepted
 
 myDiv.innerText = "shoaib"
 myDiv.style.height = "150px";
@@ -111,12 +107,6 @@ mydiv.forEach((item) => {
 
 
 
-
-
-
-
-
-
 /* NOTES 
 
 [3] => Tariqon se ham HTML ke elements ko get kar sakty hain.
@@ -137,7 +127,7 @@ HTML div pe style ki property laga kar style ke andar jo (height) ki property ha
 tarhn typesript mein bula kar unpe CSS ki property laga sakty hain.
 
 
-console.log(background);  class elements ko print krwa rhy hain 
+console.log(background);  // HTMLCollection(2) [div.background, div.background]
 
 html mein 2 divs ko same classes dey kar unhy aik hi bar mein aik sath acces kiyya or print krwaya uska result dekhny ke liye.
 HTMLCollection(2) [div.background, div.background] => ye hamen browser ke console mein show hoga iska matlab hai ke 
@@ -157,7 +147,7 @@ background[1].style.height = "150px";
 same yahn hamne (1) index waly div ko acces kar ke uspe property`s apply kar rhy hain.
 
 
-console.log(div); tags
+console.log(div);   // HTMLCollection(2) [div.classiDiv, div#IdiDiv, IdiDiv: div#IdiDiv]
 
 tags ko acces kar ke browser ke console mein resut check kar rhy hain.
 HTMLCollection(2) [div.classiDiv, div#IdiDiv, IdiDiv: div#IdiDiv] => ye bhi aik array return karta hai
@@ -184,30 +174,5 @@ ye 2no array ki tarhn dikhty hain lekin origenal array nahi hain.
 
 (1) HTML COLLECTION mein (foreach) ka method nahi chalta jab ke Nodelist mein (foreach) ka method chal jata hai.
 (2) Nodelist hmare DOM ke sath update nahi hoti or HTML Collection DOM ke sath update ho jati hai.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 */
